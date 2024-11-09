@@ -22,3 +22,31 @@ body, html {
     padding: 0;
     box-sizing: border-box;
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+header {
+    padding: 1rem; /* Padding padrão para desktops */
+}
+
+@media (max-width: 768px) {
+    /* Aumenta o padding em telas menores */
+    header {
+        padding: 1.5rem;
+    }
+}
+
+.planilha_oport{
+    position: relative;     /* Permite controle da largura total */
+    left: 50%;              /* Centraliza o elemento na viewport */
+    width: 100vw;           /* 100% da largura da viewport */
+    max-width: 100vw;       /* Limita a largura máxima à viewport */
+    transform: translateX(-50%); /* Move o iframe para o centro */
+    height: 70vh;           /* Define a altura como 70% da viewport */
+    border: 1px solid #ddd; /* Opcional: borda ao redor do iframe */
+    border-radius: 8px;     /* Opcional: arredondamento dos cantos */
+
+}
