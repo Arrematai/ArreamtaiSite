@@ -6,3 +6,11 @@
     height: auto;
     
 }
+
+iframe {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    max-width: 100%; /* Limita a largura máxima para a tela */
+    height: 70vh; /* Define a altura como 70% da altura da viewport */
+    border: 1px solid #ddd; /* Borda em torno do iframe (opcional) */
+    border-radius: 8px; /* Arredondamento dos cantos */
+}
