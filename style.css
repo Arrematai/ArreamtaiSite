@@ -14,3 +14,11 @@ iframe {
     border: 1px solid #ddd; /* Borda em torno do iframe (opcional) */
     border-radius: 8px; /* Arredondamento dos cantos */
 }
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
