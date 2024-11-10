@@ -11,6 +11,7 @@
 //Busca os dados na API Python
 async function fetchResults() {
     const query = document.getElementById('queryInput').value; // Pega o valor digitado pelo usuário
+    console.log("Query enviada:", query); // Log para verificação
 
     // Faz uma requisição POST para a API
     const response = await fetch('https://python-flask-x5fd.onrender.com/search', {
@@ -28,6 +29,7 @@ async function fetchResults() {
 
 // Preenche a tabela com os dados da API
 function populateTable(results) {
+    console.log("Resultados recebidos:", results);
     const tableBody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
     tableBody.innerHTML = ''; // Limpa os resultados anteriores
 
