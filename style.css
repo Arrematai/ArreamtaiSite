@@ -54,6 +54,10 @@ header {
         height: auto;
         width: 30%;
     }
+    .planilha_oport{
+        max-width: 90vw;
+        width: 90vw;
+        }
 }
 
 .planilha_oport{
