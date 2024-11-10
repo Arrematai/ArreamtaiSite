@@ -1,8 +1,8 @@
 .logo-esquerda {
-    display: block;
     max-width: 50px;
     margin: 0 auto 0 0;
-    height:auto ;
+    width: auto;
+    height:0 auto ;
     
 }
 
@@ -34,9 +34,14 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff; /* Cor de fundo opcional */
+    background-image: url('BackHEADER.jpg'); /* Caminho relativo para a imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #000000; /* Cor do texto */
     text-align: center;
+    width: 100%;
+
 }
 
 @media (max-width: 768px) {
