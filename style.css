@@ -56,3 +56,14 @@ header {
     border-radius: 8px;     /* Opcional: arredondamento dos cantos */
 
 }
+
+.banner {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
