@@ -55,8 +55,8 @@ header {
         width: 30%;
     }
     .planilha_oport{
-        max-width: 90vw;
-        width: 90vw;
+        max-width: 90vw !important; 
+        width: 90vw !important;
         }
 }
 
