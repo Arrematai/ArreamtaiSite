@@ -13,7 +13,7 @@ async function fetchResults() {
     const query = document.getElementById('queryInput').value; // Pega o valor digitado pelo usuário
 
     // Faz uma requisição POST para a API
-    const response = await fetch('https://python-flask-x5fd.onrender.com//search', {
+    const response = await fetch('https://python-flask-x5fd.onrender.com/search', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
