@@ -59,12 +59,13 @@ header {
 .planilha_oport{
     position: relative;     /* Permite controle da largura total */
     left: 50%;              /* Centraliza o elemento na viewport */
-    width: 90vw;           /* 100% da largura da viewport */
+    width: 60vw;           /* 100% da largura da viewport */
     max-width: 90vw;       /* Limita a largura máxima à viewport */
     transform: translateX(-50%); /* Move o iframe para o centro */
     height: 70vh;           /* Define a altura como 70% da viewport */
-    border: 1px solid #ddd; /* Opcional: borda ao redor do iframe */
+    border: none; /* Opcional: borda ao redor do iframe border: 1px solid #ddd; */
     border-radius: 8px;     /* Opcional: arredondamento dos cantos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
