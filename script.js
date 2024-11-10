@@ -8,7 +8,7 @@
      }
  });
 
-//Busca os dados na APIe  preenche a tabela
+//Busca os dados na API Python
 async function fetchResults() {
     const query = document.getElementById('queryInput').value; // Pega o valor digitado pelo usuário
 
@@ -22,9 +22,11 @@ async function fetchResults() {
     });
 
     const results = await response.json(); // Extrai os resultados em JSON
+    document.getElementById('loader').style.display = 'none';
     populateTable(results); // Chama a função para preencher a tabela
 }
 
+// Preenche a tabela com os dados da API
 function populateTable(results) {
     const tableBody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
     tableBody.innerHTML = ''; // Limpa os resultados anteriores
@@ -46,3 +48,4 @@ function populateTable(results) {
         tableBody.appendChild(row); // Adiciona a linha à tabela
     });
 }
+
