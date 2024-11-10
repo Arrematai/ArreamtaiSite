@@ -40,8 +40,8 @@ header {
     }
     .logo-esquerda{
         max-height: 100%;
-        height: 100%;
-        width: auto;
+        height: auto%;
+        width: 100%;
     }
 }
 
