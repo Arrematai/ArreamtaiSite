@@ -55,7 +55,7 @@ let ListaLeiloes = [];
 
 // Função para carregar o CSV
 function loadCSV() {
-    fetch('TudoSudeste.csv')
+    fetch('TodosSudeste.csv')
         .then(response => {
             if (!response.ok) throw new Error('Erro ao carregar o arquivo CSV');
             return response.text();
