@@ -51,3 +51,36 @@ function populateTable(results) {
     });
 }
 
+let ListaLeiloes = [];
+
+// Função para carregar o CSV
+function loadCSV() {
+    fetch('TudoSudeste.csv')
+        .then(response => {
+            if (!response.ok) throw new Error('Erro ao carregar o arquivo CSV');
+            return response.text();
+        })
+        .then(data => {
+            // Processar o CSV e armazenar as URLs na ListaLeiloes
+            ListaLeiloes = data.split('\n').map(url => url.trim());
+            console.log('URLs carregadas:', ListaLeiloes);
+        })
+        .catch(error => console.error('Erro:', error));
+}
+
+// Função para validar a URL
+function validateURL() {
+    const userInput = document.getElementById("urlInput").value.trim();
+    const validationResult = document.getElementById("validationResult");
+
+    if (ListaLeiloes.includes(userInput)) {
+        validationResult.textContent = "Link válido";
+        validationResult.style.color = "green";
+    } else {
+        validationResult.textContent = "Link falso";
+        validationResult.style.color = "red";
+    }
+}
+
+// Carregar o CSV ao iniciar
+loadCSV();
